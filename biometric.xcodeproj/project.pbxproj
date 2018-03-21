@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9291D1182061CBA9009512C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9291D1172061CBA9009512C3 /* main.m */; };
+		9291D1202061CC7C009512C3 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9291D11F2061CC7C009512C3 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		9291D1142061CBA9009512C3 /* biometric */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = biometric; sourceTree = BUILT_PRODUCTS_DIR; };
 		9291D1172061CBA9009512C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9291D11F2061CC7C009512C3 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9291D1202061CC7C009512C3 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				9291D1162061CBA9009512C3 /* biometric */,
 				9291D1152061CBA9009512C3 /* Products */,
+				9291D11E2061CC7C009512C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				9291D1172061CBA9009512C3 /* main.m */,
 			);
 			path = biometric;
+			sourceTree = "<group>";
+		};
+		9291D11E2061CC7C009512C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9291D11F2061CC7C009512C3 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +101,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = Weaponize;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					9291D1132061CBA9009512C3 = {
 						CreatedOnToolsVersion = 9.2;
@@ -170,6 +182,7 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -219,6 +232,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;

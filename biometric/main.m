@@ -2,6 +2,7 @@
 //  main.m
 //  biometric
 //
+//
 //  Using examples from
 //  - https://developer.apple.com/documentation/localauthentication?language=objc
 //  - sudo-touchid https://github.com/mattrajca/sudo-touchid
@@ -31,6 +32,9 @@ int main(int argc, const char * argv[]) {
             // biometryType is only set after calling canEvaluatePolicy
             if (@available(macOS 10.13.2, *)) {
             
+                // test for the types of biometry available on the current device
+                // currently not using this, but the idea would be you could customize
+                // based on how the user could locally authenticate
                 switch(myContext.biometryType) {
                     case LABiometryTypeNone:
                         break;
